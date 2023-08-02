@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Gets the current monthly contributions",
+    "method": "get",
+    "path": "/contributions",
+    "payload": {},
+    "expectedResponse": { "amount": 100 },
+    "expectedStatus": 200
+  },
+  {
+    "description": "Should update the monthly contributions with allocated amount: 200",
+    "method": "put",
+    "path": "/contributions",
+    "payload": { "amount": 200 },
+    "expectedResponse": { "amount": 200 },
+    "expectedStatus": 200
+  }
+]
